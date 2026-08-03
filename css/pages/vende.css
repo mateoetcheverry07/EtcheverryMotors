@@ -1,0 +1,63 @@
+main form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+}
+
+main form p {
+    margin-bottom: 1.2rem;
+}
+
+main form label {
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 0.3rem;
+}
+
+main form .label-vtv {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+main form input,
+main form select,
+main form textarea {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+    background-color: var(--color-white, #ffffff);
+}
+
+main form button {
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+main form button:hover {
+    opacity: 0.9;
+}
+
+main form .btn-secondary {
+    background-color: #ccc;
+    color: #333;
+    margin-left: 10px;
+}
+
+main form input[type="radio"] {
+    width: auto;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+main form input[type="radio"] + label {
+    font-weight: normal;
+    display: inline;
+    cursor: pointer;
+}

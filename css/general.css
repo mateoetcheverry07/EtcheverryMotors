@@ -1,0 +1,151 @@
+:root {
+    --color-bg: #f4f6f8;
+    --color-primary: #1e293b;
+    --color-accent: #394359;
+    --color-text: #222e3e;
+    --color-white: #ffffff;
+    --max-width: 1200px;
+    --font-heading: "Fraunces", serif;
+    --font-body: "Poppins", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--color-text);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-heading);
+}
+
+header {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+}
+
+nav h2 {
+    font-size: 1.5rem;
+    color: var(--color-white);
+    margin: 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: var(--color-white);
+    font-weight: 500;
+    transition: color 0.2s ease;
+    padding: 0.5rem 0;
+}
+
+.nav-links a:hover {
+    color: var(--color-accent);
+}
+
+main {
+    max-width: var(--max-width);
+    width: 100%;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+    flex: 1;
+}
+
+h1 {
+    font-size: 2.2rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.8rem;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-accent);
+    color: black;
+    transform: translateY(-2px);
+}
+
+/* Listas comunes dentro del main (con clase en lugar de :not) */
+.lista-comun {
+    margin-top: 0.5rem;
+    padding-left: 1.2rem;
+    list-style: disc;
+}
+
+.lista-comun li {
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    margin-top: auto;
+}

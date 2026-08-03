@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EM - Vende tu vehiculo!</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h2>Etcheverry Motors</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="cotiza.html">Vende tu vehiculo!</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Vende tu vehículo</h1>
+        <p>Ingresá los datos de tu auto y de contacto para recibir una tasación:</p>
+
+        <form action="#" method="POST">
+            <p>
+                <label for="nombre">Nombre y Apellido:</label><br>
+                <input type="text" id="nombre" name="nombre" required>
+            </p>
+
+            <p>
+                <label for="email">Correo Electrónico:</label><br>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="telefono">Teléfono:</label><br>
+                <input type="tel" id="telefono" name="telefono" required>
+            </p>
+
+            <p>
+                <label for="marca">Marca:</label><br>
+                <input type="text" id="marca" name="marca">
+            </p>
+
+            <p>
+                <label for="modelo">Modelo:</label><br>
+                <input type="text" id="modelo" name="modelo">
+            </p>
+
+            <p>
+                <label for="anio">Año:</label><br>
+                <input type="number" id="anio" name="anio">
+            </p>
+
+            <p>
+                <label for="kilometros">Kilómetros:</label><br>
+                <input type="number" id="kilometros" name="kilometros">
+            </p>
+
+            <p>
+                <label class="label-vtv">¿El vehículo cuenta con VTV al día?</label>
+                <input type="radio" id="vtv_si" name="vtv" value="si" checked>
+                <label for="vtv_si">Sí</label>
+                <input type="radio" id="vtv_no" name="vtv" value="no">
+                <label for="vtv_no">No</label>
+            </p>
+
+            <p>
+                <label for="motivo">Motivo de contacto:</label><br>
+                <select id="motivo" name="motivo">
+                    <option value="tasacion">Quiero tasar mi usado</option>
+                    <option value="consignacion">Dejar en consignación</option>
+                    <option value="permuta">Quiero entregar mi auto como parte de pago</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="comentarios">Comentarios adicionales / Detalles del auto:</label><br>
+                <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+            </p>
+
+            <p>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="reset" class="btn btn-secondary">Limpiar</button>
+            </p>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Etcheverry Motors.</p>
+    </footer>
+</body>
+</html>

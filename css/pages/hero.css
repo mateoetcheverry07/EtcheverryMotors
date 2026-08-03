@@ -1,0 +1,58 @@
+body {
+    background-color: var(--color-bg);
+}
+
+.hero {
+    width: 100%;
+    min-height: 92.4vh;
+    background-image: linear-gradient(rgba(20, 29, 42, 0.7), rgba(26, 30, 35, 0.7)), url("../../img/agencia3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--color-white);
+    padding: 2rem;
+    margin: 0;
+    border-radius: 0;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-logo {
+    width: 450px;        
+    margin-bottom: 7px; 
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3)); 
+}
+
+.hero h1 {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    color: var(--color-white);
+    margin-bottom: 1rem;
+    margin-top: 0; 
+}
+
+.hero p {
+    font-family: var(--font-body);
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: #e2e8f0;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-logo {
+        width: 200px;
+    }
+}
